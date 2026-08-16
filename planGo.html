@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>План обучения Go Backend</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+padding:40px;
+color:#222;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+font-size:34px;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:35px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+th{
+background:#2f80ed;
+color:white;
+padding:15px;
+font-size:15px;
+}
+
+td{
+padding:14px;
+border-bottom:1px solid #ececec;
+vertical-align:top;
+font-size:14px;
+line-height:1.5;
+}
+
+tr:hover{
+background:#fafafa;
+}
+
+.week{
+background:#fff7df;
+font-weight:bold;
+}
+
+.date{
+font-weight:bold;
+width:90px;
+}
+
+.time{
+width:170px;
+white-space:nowrap;
+}
+
+.topic{
+width:260px;
+}
+
+.extra{
+width:420px;
+}
+
+@media print{
+
+body{
+padding:0;
+background:white;
+}
+
+table{
+box-shadow:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>План обучения Go Backend</h1>
+
+<p class="subtitle">
+2 часа • Учеба только в выходные • После каждого занятия выполнить домашнее задание
+</p>
+
+<table>
+
+<tr>
+
+<th>Дата</th>
+
+<th>Тема</th>
+
+<th>Таймкод</th>
+
+<th>Дополнительно</th>
+
+</tr>
+
+
+<tr>
+
+<td class="date">
+05.07
+</td>
+
+<td class="topic">
+Concurrency (большой пример)
+</td>
+
+<td class="time">
+05:22:18 — 06:10:45
+</td>
+
+<td class="extra">
+
+<b>Домашнее задание.</b><br><br>
+
+Повторить:
+
+<ul>
+
+<li>Context</li>
+
+<li>Mutex</li>
+
+<li>RWMutex</li>
+
+<li>WaitGroup</li>
+
+</ul>
+
+<br>
+
+🎥 Дополнительно (10–15 минут):
+
+"Go WaitGroup Explained"
+
+<br><br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что делает WaitGroup?</li>
+
+<li>Для чего нужен Mutex?</li>
+
+<li>Когда возникает Race Condition?</li>
+
+<li>Что делает Context?</li>
+
+<li>Чем RWMutex отличается от Mutex?</li>
+
+</ol>
+
+<br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Что такое goroutine?</li>
+
+<li>Как работает WaitGroup?</li>
+
+<li>Что такое deadlock?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td class="date">
+
+06.07
+
+</td>
+
+<td>
+
+HTTP
+
+<br>
+
+Postman
+
+</td>
+
+<td>
+
+06:10:45 — 07:03:49
+
+</td>
+
+<td>
+
+<b>Домашнее задание.</b>
+
+<br><br>
+
+Создать первый HTTP сервер самостоятельно.
+
+<br><br>
+
+🎥 Дополнительно
+
+15 минут
+
+HTTP за 15 минут
+
+<br><br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое HTTP?</li>
+
+<li>Что такое клиент?</li>
+
+<li>Что такое сервер?</li>
+
+<li>Что такое Request?</li>
+
+<li>Что такое Response?</li>
+
+</ol>
+
+<br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Какие HTTP методы знаешь?</li>
+
+<li>Чем GET отличается от POST?</li>
+
+<li>Что такое статус-код?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+07.07
+
+</td>
+
+<td>
+
+Первый HTTP сервер
+
+<br>
+
+Request Body
+
+</td>
+
+<td>
+
+07:03:49 — 08:13:12
+
+</td>
+
+<td>
+
+<b>Домашнее задание.</b>
+
+<br><br>
+
+Самостоятельно написать сервер без видео.
+
+<br><br>
+
+Попробовать отправить запрос через Postman.
+
+<br><br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое Handler?</li>
+
+<li>Как получить Request Body?</li>
+
+<li>Что такое ResponseWriter?</li>
+
+<li>Как вернуть JSON?</li>
+
+<li>Как вернуть ошибку?</li>
+
+</ol>
+
+<br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Как работает net/http?</li>
+
+<li>Что делает ListenAndServe?</li>
+
+<li>Как написать простой API?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr class="week">
+
+<td colspan="4">
+
+<b>ИТОГ НЕДЕЛИ</b>
+
+<br><br>
+
+К концу недели необходимо уверенно понимать:
+
+<ul>
+
+<li>Goroutines</li>
+
+<li>Channels</li>
+
+<li>Mutex</li>
+
+<li>RWMutex</li>
+
+<li>WaitGroup</li>
+
+<li>Context</li>
+
+<li>HTTP</li>
+
+<li>Request</li>
+
+<li>Response</li>
+
+<li>Postman</li>
+
+</ul>
+
+Если какая-либо тема вызывает затруднения — сначала повторить её, затем переходить дальше.
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+10.07
+
+</td>
+
+<td>
+
+Response
+
+<br>
+
+Status Codes
+
+<br>
+
+Headers
+
+</td>
+
+<td>
+
+08:13:12 — 08:31:02
+
+</td>
+
+<td>
+
+Домашнее задание.
+
+<br><br>
+
+Самостоятельно вернуть:
+
+<ul>
+
+<li>200</li>
+
+<li>400</li>
+
+<li>404</li>
+
+<li>500</li>
+
+</ul>
+
+<br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое Header?</li>
+
+<li>Что такое Content-Type?</li>
+
+<li>Для чего нужен Status Code?</li>
+
+</ol>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+14.07
+
+</td>
+
+<td>
+
+HTTP Methods
+
+<br>
+
+JSON
+
+</td>
+
+<td>
+
+08:31:02 — 09:25:16
+
+</td>
+
+<td>
+
+Домашнее задание.
+
+<br><br>
+
+Написать небольшой API,
+который принимает JSON
+и возвращает JSON.
+
+<br><br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Что такое JSON?</li>
+
+<li>marshal/unmarshal?</li>
+
+<li>Когда использовать PUT?</li>
+
+<li>PATCH?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+<!-- ПРОДОЛЖЕНИЕ В ЧАСТИ 2 -->
+<tr>
+
+<td>
+
+15.07
+
+</td>
+
+<td>
+
+Query Parameters
+
+<br>
+
+REST API (часть 1)
+
+</td>
+
+<td>
+
+09:25:16 — 10:35:00
+
+</td>
+
+<td>
+
+<b>Домашнее задание.</b>
+
+<br><br>
+
+Добавить Query-параметры в свой HTTP-сервер.
+
+Например:
+
+<ul>
+
+<li>/users?id=1</li>
+
+<li>/products?page=2</li>
+
+</ul>
+
+<br>
+
+🎥 Дополнительно (15 минут)
+
+REST API за 15 минут
+
+<br><br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое Query Parameters?</li>
+
+<li>Чем они отличаются от Path Parameters?</li>
+
+<li>Что такое REST?</li>
+
+<li>Что означает CRUD?</li>
+
+<li>Когда использовать GET?</li>
+
+</ol>
+
+<br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Что такое REST API?</li>
+
+<li>Какие HTTP методы относятся к CRUD?</li>
+
+<li>Что такое идемпотентность?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+18.07
+
+</td>
+
+<td>
+
+REST API (часть 2)
+
+</td>
+
+<td>
+
+10:35:00 — 11:49:46
+
+</td>
+
+<td>
+
+<b>Домашнее задание.</b>
+
+<br><br>
+
+Написать небольшое API:
+
+<ul>
+
+<li>GET /users</li>
+
+<li>GET /users/{id}</li>
+
+<li>POST /users</li>
+
+<li>DELETE /users/{id}</li>
+
+</ul>
+
+<br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое Endpoint?</li>
+
+<li>Что такое Resource?</li>
+
+<li>Что такое URI?</li>
+
+<li>Почему REST называют архитектурным стилем?</li>
+
+<li>Что возвращает POST?</li>
+
+</ol>
+
+<br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Назови принципы REST.</li>
+
+<li>Когда использовать POST, PUT и PATCH?</li>
+
+<li>Что такое Stateless?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+<tr class="week">
+
+<td colspan="4">
+
+<b>ИТОГ НЕДЕЛИ</b>
+
+<br><br>
+
+До перехода к следующему видео необходимо знать:
+
+<ul>
+
+<li>HTTP полностью</li>
+
+<li>Postman</li>
+
+<li>JSON</li>
+
+<li>Headers</li>
+
+<li>Status Codes</li>
+
+<li>HTTP Methods</li>
+
+<li>REST API</li>
+
+<li>Query Parameters</li>
+
+</ul>
+
+<br>
+
+✔ Видео №2 полностью закончено.
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+
+19.07
+
+</td>
+
+<td>
+
+Git (теория)
+
+</td>
+
+<td>
+
+00:02:34 — 00:56:45
+
+</td>
+
+<td>
+
+<b>Домашнее задание.</b>
+
+<br><br>
+
+Создать GitHub-аккаунт (если его нет).
+
+<br>
+
+Создать первый локальный репозиторий.
+
+<br><br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое Git?</li>
+
+<li>Что такое Repository?</li>
+
+<li>Что такое Commit?</li>
+
+<li>Что такое Branch?</li>
+
+<li>Что такое Merge?</li>
+
+</ol>
+
+<br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Зачем нужен Git?</li>
+
+<li>Разница между Git и GitHub?</li>
+
+<li>Что такое commit?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+22.07
+
+</td>
+
+<td>
+
+Git (практика)
+
+</td>
+
+<td>
+
+00:56:45 — 02:05:01
+
+</td>
+
+<td>
+
+<b>Домашнее задание.</b>
+
+<br><br>
+
+Выполнить команды:
+
+<ul>
+
+<li>git init</li>
+
+<li>git status</li>
+
+<li>git add .</li>
+
+<li>git commit</li>
+
+<li>git log</li>
+
+<li>git branch</li>
+
+</ul>
+
+<br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что делает git add?</li>
+
+<li>Что делает git commit?</li>
+
+<li>Что показывает git status?</li>
+
+<li>Как создать новую ветку?</li>
+
+<li>Как переключиться между ветками?</li>
+
+</ol>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+
+23.07
+
+</td>
+
+<td>
+
+PostgreSQL (теория)
+
+</td>
+
+<td>
+
+02:05:01 — 03:25:10
+
+</td>
+
+<td>
+
+<b>Домашнее задание.</b>
+
+<br><br>
+
+Установить PostgreSQL.
+
+Создать первую базу данных.
+
+<br><br>
+
+📖 Дополнительно
+
+Изучить:
+
+<ul>
+
+<li>SELECT</li>
+
+<li>INSERT</li>
+
+<li>UPDATE</li>
+
+<li>DELETE</li>
+
+</ul>
+
+<br>
+
+💼 Собеседование
+
+<ul>
+
+<li>Что такое SQL?</li>
+
+<li>Что такое Primary Key?</li>
+
+<li>Что такое Foreign Key?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr class="week">
+
+<td colspan="4">
+
+<b>ИТОГ НЕДЕЛИ</b>
+
+<br><br>
+
+Перед переходом дальше обязательно знать:
+
+<ul>
+
+<li>Git</li>
+
+<li>Commit</li>
+
+<li>Branch</li>
+
+<li>Merge</li>
+
+<li>Repository</li>
+
+<li>Основы SQL</li>
+
+<li>PostgreSQL</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+<!-- ПРОДОЛЖЕНИЕ В ЧАСТИ 3 -->
+<tr>
+
+<td>
+
+26.07
+
+</td>
+
+<td>
+
+PostgreSQL (практика)
+
+<br>
+
+Пагинация
+
+</td>
+
+<td>
+
+03:25:10 — 05:07:51
+
+</td>
+
+<td>
+
+🎯 Практика
+
+<ul>
+<li>Создать таблицу users</li>
+<li>Добавить 10–20 записей</li>
+<li>Написать SELECT-запросы</li>
+<li>Попробовать LIMIT и OFFSET</li>
+</ul>
+
+🎥 Дополнительно (15 минут)
+
+Как работает пагинация в REST API
+
+<br><br>
+
+❓ Мини-тест
+
+<ol>
+<li>Что делает LIMIT?</li>
+<li>Для чего OFFSET?</li>
+<li>Почему пагинация важна?</li>
+<li>Когда использовать ORDER BY?</li>
+</ol>
+
+💼 Собеседование
+
+<ul>
+<li>Как реализовать пагинацию?</li>
+<li>Почему нельзя отдавать миллион строк?</li>
+</ul>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+27.07
+
+</td>
+
+<td>
+
+Миграции
+
+</td>
+
+<td>
+
+05:07:51 — 06:19:38
+
+</td>
+
+<td>
+
+🎯 Практика
+
+<ul>
+
+<li>Понять назначение миграций</li>
+
+<li>Создать первую миграцию</li>
+
+<li>Применить её</li>
+
+</ul>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое миграция?</li>
+
+<li>Зачем они нужны?</li>
+
+<li>Что такое rollback?</li>
+
+</ol>
+
+💼 Собеседование
+
+<ul>
+
+<li>Использовал ли миграции?</li>
+
+<li>Как обновляется БД на продакшене?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+
+30.07
+
+</td>
+
+<td>
+
+Операционная система
+
+<br>
+
+Переменные окружения
+
+<br>
+
+Makefile
+
+</td>
+
+<td>
+
+07:01:14 — 07:46:29
+
+</td>
+
+<td>
+
+🎯 Практика
+
+<ul>
+
+<li>Создать файл .env</li>
+
+<li>Подключить переменные окружения</li>
+
+<li>Написать простой Makefile</li>
+
+</ul>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что хранится в .env?</li>
+
+<li>Почему нельзя хранить пароль в коде?</li>
+
+<li>Для чего нужен Makefile?</li>
+
+</ol>
+
+💼 Собеседование
+
+<ul>
+
+<li>Что такое переменные окружения?</li>
+
+<li>Для чего нужен Makefile?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+
+31.07
+
+</td>
+
+<td>
+
+Docker
+
+</td>
+
+<td>
+
+07:46:29 — 09:49:22
+
+</td>
+
+<td>
+
+🎯 Практика
+
+<ul>
+
+<li>Установить Docker</li>
+
+<li>Запустить первый контейнер</li>
+
+<li>Создать Dockerfile</li>
+
+</ul>
+
+🎥 Дополнительно
+
+Docker за 20 минут
+
+<br><br>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое контейнер?</li>
+
+<li>Что такое образ?</li>
+
+<li>Что делает Dockerfile?</li>
+
+<li>Для чего docker compose?</li>
+
+</ol>
+
+💼 Собеседование
+
+<ul>
+
+<li>Зачем Docker backend-разработчику?</li>
+
+<li>Чем контейнер отличается от виртуальной машины?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr class="week">
+
+<td colspan="4">
+
+<b>ИТОГ НЕДЕЛИ</b>
+
+<br><br>
+
+Перед продолжением курса необходимо знать:
+
+<ul>
+
+<li>PostgreSQL</li>
+
+<li>SQL</li>
+
+<li>LIMIT / OFFSET</li>
+
+<li>Пагинацию</li>
+
+<li>Миграции</li>
+
+<li>.env</li>
+
+<li>Makefile</li>
+
+<li>Docker</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+
+01.08
+
+</td>
+
+<td>
+
+Системные сигналы
+
+<br>
+
+Логгирование
+
+</td>
+
+<td>
+
+09:49:22 — 11:10:55
+
+</td>
+
+<td>
+
+🎯 Практика
+
+<ul>
+
+<li>Добавить логирование в проект</li>
+
+<li>Разобраться с graceful shutdown</li>
+
+</ul>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое SIGINT?</li>
+
+<li>Что такое graceful shutdown?</li>
+
+<li>Для чего нужны логи?</li>
+
+</ol>
+
+💼 Собеседование
+
+<ul>
+
+<li>Какие уровни логирования знаешь?</li>
+
+<li>Что происходит при Ctrl+C?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+
+02.08
+
+</td>
+
+<td>
+
+Архитектура Go Backend
+
+<br>
+
+Заключение
+
+</td>
+
+<td>
+
+11:10:55 — 11:54:06
+
+</td>
+
+<td>
+
+🎯 Практика
+
+<ul>
+
+<li>Повторить весь курс</li>
+
+<li>Составить план первого pet-проекта</li>
+
+<li>Подготовить GitHub</li>
+
+</ul>
+
+❓ Мини-тест
+
+<ol>
+
+<li>Что такое Clean Architecture?</li>
+
+<li>Что такое Handler?</li>
+
+<li>Что такое Repository?</li>
+
+<li>Что такое Service?</li>
+
+<li>Как бы ты начал новый проект?</li>
+
+</ol>
+
+💼 Собеседование
+
+<ul>
+
+<li>Расскажи архитектуру своего проекта.</li>
+
+<li>Почему выбрал Go?</li>
+
+<li>Какие темы курса были самыми сложными?</li>
+
+</ul>
+
+</td>
+
+</tr>
+
+
+
+<tr class="week">
+
+<td colspan="4">
+
+<b>КУРС ПОЛНОСТЬЮ ЗАВЕРШЁН ✅</b>
+
+<br><br>
+
+Теперь ты должен уверенно знать:
+
+<ul>
+
+<li>Go Core</li>
+<li>Concurrency</li>
+<li>HTTP</li>
+<li>REST API</li>
+<li>JSON</li>
+<li>Git</li>
+<li>PostgreSQL</li>
+<li>SQL</li>
+<li>Docker</li>
+<li>Миграции</li>
+<li>Логгирование</li>
+<li>Архитектуру Go Backend</li>
+
+</ul>
+
+<br>
+
+<b>Следующий этап:</b>
+
+<ol>
+
+<li>Сделать Todo API.</li>
+<li>Сделать второй проект (например, интернет-магазин или сервис бронирования).</li>
+<li>Оформить GitHub.</li>
+<li>Составить резюме.</li>
+<li>Начать проходить собеседования.</li>
+
+</ol>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</body>
+
+</html>
