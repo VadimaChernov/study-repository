@@ -3,6 +3,7 @@ package main
 import (
 	"todoapp/komandi"
 	"todoapp/scanner"
+	simpleconnection "todoapp/simple_connection"
 )
 
 func main() {
@@ -11,4 +12,6 @@ func main() {
 	scanner := scanner.NewScanner(komandiKomand)
 
 	scanner.Start()
+
+	simpleconnection.CheckConnection()
 }
